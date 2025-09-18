@@ -118,5 +118,5 @@ Ce projet met en pratique :
 - Manipulation de **chaînes de caractères**
 
 ## 👨‍💻 Auteur
-Projet développé par **[Votre Nom]**  
+Projet développé par **OUSSMA EL AIMAR**  
 Dans le cadre de l’**examen final** du module **Langage C**.
