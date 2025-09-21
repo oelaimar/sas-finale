@@ -46,7 +46,6 @@ int findIndexById(int id) {
 
 // Function to find the index of a player by their first name
 int findIndexByName(const char* name, int* indexes) {
-    indexes[MAX_PLAYERS];
     int pos=0;
     for (int i=0; i<count; i++) {
         if (strcasecmp(player[i].firstname, name) == 0) {
@@ -162,6 +161,7 @@ void displayPlayersByPosition(){
     for(int i=0; i<count; i++){
         if(strcmp(player[i].poste,"Défenseur")==0){
             displayPlayer(player[i]);
+            found =1;
         }
     }
     if(!found){
@@ -175,6 +175,7 @@ void displayPlayersByPosition(){
     for(int i=0; i<count; i++){
         if(strcmp(player[i].poste,"Milieu")==0){
             displayPlayer(player[i]);
+            found =1;
         }
     }if(!found){
         printf("Il n'y a aucun Milieu \n");
@@ -188,6 +189,7 @@ void displayPlayersByPosition(){
     for(int i=0; i<count; i++){
         if(strcmp(player[i].poste,"Attaquant")==0){
             displayPlayer(player[i]);
+            found =1;
         }
     }
     if(!found){
@@ -419,10 +421,10 @@ void deletePlayer(){
     printf("Voulez-vous vraiment supprimer ce joueur ? ....\n");
     printf("(O/N) O pour OUI, N pour NON : ");
     char confermation;
-    scanf(" %c",confermation);
+    scanf(" %c",&confermation);
     getchar();
 
-    if(confermation == 'o' || confermation== 'O'){
+    if(confermation == 'n' || confermation == 'M'){
         printf("l'opération de suppression a été annulée");
         return;
     }
