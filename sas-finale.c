@@ -619,7 +619,7 @@ int main(){
     scanf("%d",&start);
     getchar();
     
-    if(start=1){
+    if(start==1){
         printf("Le programme va démarrer avec 10 joueurs par défaut.\n");
         addDefaultPlayers();
         printf("\nAppuyez sur Entrée pour continuer...");
